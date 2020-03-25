@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>CathChurch</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="assets/css/foundation.min.css">
+<link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/gallery.css">
+<link rel="stylesheet" href="assets/css/justifiedGallery.css">
+<link rel="stylesheet" href="assets/js/jquery-colorbox/colorbox.css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<!----HOME SECTION---><!-- InstanceBeginEditable name="content" -->
+ <div class="row">
+  <div class="err-container float-center">
+       	<img src="assets/img/404_error-illo@2x.png" alt="Error">
+        	<h2 class="text-center">Error(404)</h2>
+        	<p>Error - Page Not Found</p>
+        	<hr>
+        	<span>Please Check the URL</span>
+        </div>
+</div>
+
+
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="footer" -->
+
+          
+      
+      
+<!-- InstanceEndEditable --><script src="assets/js/vendor/jquery.js"></script> 
+<script src="assets/js/jquery.justifiedGallery.js"></script>
+<script src="assets/js/jquery-colorbox/jquery.colorbox-min.js"></script>
+<script src="assets/js/vendor/foundation.js"></script> 
+<script src="assets/js/app.js"></script> 
+	<script>
+		$(document).ready(function () {
+			$(".colorboxEx").each(function (i, el) {
+				$(el).justifiedGallery({rel: 'gal' + i}).on('jg.complete', function () {
+					$(this).find('a').colorbox({
+						maxWidth : '80%',
+						maxHeight : '80%',
+						opacity : 0.8,
+						transition : 'elastic',
+						current : ''
+					});
+				});
+			});
+		});
+	</script>
+</body>
+<!-- InstanceEnd --></html>
